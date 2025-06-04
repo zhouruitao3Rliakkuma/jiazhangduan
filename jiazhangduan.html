@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>家长端培训平台</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link href="jiazhangduan.css" rel="stylesheet">
+  <script src="jiazhangduan.js" type="text/javascript"></script>
+
+
+</head>
+<body class="font-inter text-neutral-500 min-h-screen gradient-bg">
+  <!-- 顶部搜索栏 -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+    <div class="container mx-auto px-4 py-3">
+      <form class="flex items-center bg-neutral-100 rounded-full p-2">
+        <i class="fa fa-search text-neutral-400 ml-3"></i>
+        <input
+          type="text"
+          class="w-full bg-transparent border-none outline-none pl-3 text-sm"
+          placeholder="搜索课程、机构..."
+        />
+        <button type="submit" class="bg-gradient-to-r from-primary to-secondary text-white rounded-full px-4 py-1.5 text-sm font-medium shadow-md hover:shadow-lg transition-all">
+          搜索
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <!-- 主内容区域-->
+  <main class="container mx-auto px-4 pb-24 pt-4">
+    <!-- 首页 -->
+    <div id="home-page" class="page-content animate-fade-in">
+      <div class="flex justify-between items-center mb-4 mt-2">
+        <h2 class="text-xl font-bold text-neutral-700">培训机构资讯</h2>
+        <a href="#" class="text-primary text-sm font-medium hover:underline flex items-center">
+          更多 <i class="fa fa-angle-right ml-1"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- 机构资讯卡片 -->
+        <div class="bg-white rounded-xl p-4 card-shadow card-hover-effect hover:card-hover-shadow overflow-hidden relative">
+          <div class="absolute top-0 right-0 bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-bl-lg">
+            新课程
+          </div>
+          <img src="https://picsum.photos/300/150?random=1" alt="阳光教育课程" class="w-full h-40 object-cover rounded-lg mb-3">
+          <h3 class="font-bold text-neutral-700 mb-2">阳光教育：暑期新课程上线</h3>
+          <p class="text-sm text-neutral-500 line-clamp-2">2025年暑期课程报名开启，覆盖语数英等多个科目，报名享早鸟价9折！</p>
+          <div class="mt-3 flex justify-between items-center">
+            <span class="text-xs text-neutral-400">发布于 2025-05-15</span>
+            <button class="text-primary text-sm font-medium hover:underline flex items-center">
+              查看详情 <i class="fa fa-angle-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-4 card-shadow card-hover-effect hover:card-hover-shadow overflow-hidden relative">
+          <div class="absolute top-0 right-0 bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-bl-lg">
+            热门
+          </div>
+          <img src="https://picsum.photos/300/150?random=2" alt="编程课程" class="w-full h-40 object-cover rounded-lg mb-3">
+          <h3 class="font-bold text-neutral-700 mb-2">新思维培训中心开设AI编程课</h3>
+          <p class="text-sm text-neutral-500 line-clamp-2">AI编程与逻辑思维课程同步开设，适合7-15岁孩子，免费试听名额限量发放！</p>
+          <div class="mt-3 flex justify-between items-center">
+            <span class="text-xs text-neutral-400">发布于 2025-05-20</span>
+            <button class="text-primary text-sm font-medium hover:underline flex items-center">
+              查看详情 <i class="fa fa-angle-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center mb-4 mt-6">
+        <h2 class="text-xl font-bold text-neutral-700">社会新闻</h2>
+        <a href="#" class="text-primary text-sm font-medium hover:underline flex items-center">
+          更多 <i class="fa fa-angle-right ml-1"></i>
+        </a>
+      </div>
+
+      <div class="space-y-4">
+        <!-- 新闻卡片 -->
+        <div class="bg-white rounded-xl p-4 card-shadow card-hover-effect hover:card-hover-shadow">
+          <div class="flex items-start">
+            <img src="https://picsum.photos/80/80?random=7" alt="教育部新闻" class="w-16 h-16 object-cover rounded-lg mr-3">
+            <div class="flex-1">
+              <h3 class="font-bold text-neutral-700 mb-1">教育部发布暑期校外培训最新规范</h3>
+              <p class="text-sm text-neutral-500 line-clamp-2">加强监管，明确培训时间限制，严禁超前教学，确保培训安全、规范、合理。</p>
+              <div class="mt-2 flex justify-between items-center">
+                <span class="text-xs text-neutral-400">发布于 2025-05-18</span>
+                <button class="text-primary text-sm font-medium hover:underline">阅读全文</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-4 card-shadow card-hover-effect hover:card-hover-shadow">
+          <div class="flex items-start">
+            <img src="https://picsum.photos/80/80?random=8" alt="双减政策" class="w-16 h-16 object-cover rounded-lg mr-3">
+            <div class="flex-1">
+              <h3 class="font-bold text-neutral-700 mb-1">双减政策实施效果逐步显现</h3>
+              <p class="text-sm text-neutral-500 line-clamp-2">第三方调研显示：家长和学生负担同比减轻35%，培训市场加速向素质教育转型。</p>
+              <div class="mt-2 flex justify-between items-center">
+                <span class="text-xs text-neutral-400">发布于 2025-05-10</span>
+                <button class="text-primary text-sm font-medium hover:underline">阅读全文</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 学习进度页面 -->
+    <div id="progress-page" class="page-content hidden animate-fade-in">
+      <div class="flex justify-between items-center mb-4 mt-2">
+        <h2 class="text-xl font-bold text-neutral-700">孩子学习进度</h2>
+        <div class="relative">
+          <select class="appearance-none bg-white border border-neutral-200 rounded-lg px-3 py-1.5 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20">
+            <option>小明 (五年级)</option>
+            <option>小红 (三年级)</option>
+          </select>
+          <i class="fa fa-angle-down absolute right-3 top-1/2 transform -translate-y-1/2 text-neutral-400 pointer-events-none"></i>
+        </div>
+      </div>
+
+      <!-- 总体进度 -->
+      <div class="bg-white rounded-xl p-4 card-shadow mb-6 animate-slide-up" style="animation-delay: 0.1s">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="font-medium text-neutral-700">总体学习进度</h3>
+          <span class="text-primary font-bold">75%</span>
+        </div>
+        <div class="w-full bg-neutral-100 rounded-full h-2.5 overflow-hidden">
+          <div class="bg-gradient-to-r from-primary to-secondary h-2.5 rounded-full progress-animate" style="width: 75%"></div>
+        </div>
+        <div class="flex justify-between text-xs text-neutral-400 mt-1">
+          <span>已完成 15/20 课程</span>
+          <span>预计完成日期: 2025-08-15</span>
+        </div>
+      </div>
+
+      <!-- 学科进度 -->
+      <h3 class="text-lg font-semibold text-neutral-700 mb-3 animate-slide-up" style="animation-delay: 0.2s">学科进度详情</h3>
+
+      <div class="space-y-4">
+        <!-- 数学 -->
+        <div class="bg-white rounded-xl p-4 card-shadow animate-slide-up" style="animation-delay: 0.3s">
+          <div class="flex justify-between items-center mb-2">
+            <div class="flex items-center">
+              <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                <i class="fa fa-calculator text-primary"></i>
+              </div>
+              <h4 class="font-medium text-neutral-700">数学思维</h4>
+            </div>
+            <span class="text-primary font-medium">85%</span>
+          </div>
+          <div class="w-full bg-neutral-100 rounded-full h-2 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-secondary h-2 rounded-full progress-animate" style="width: 85%"></div>
+          </div>
+          <div class="mt-3">
+            <h5 class="text-sm font-medium text-neutral-600 mb-1">最近学习</h5>
+            <ul class="space-y-2">
+              <li class="flex justify-between text-xs text-neutral-500">
+                <span class="flex items-center">
+                  <i class="fa fa-check-circle text-success mr-1"></i>
+                  分数运算进阶
+                </span>
+                <span class="text-success">已完成</span>
+              </li>
+              <li class="flex justify-between text-xs text-neutral-500">
+                <span class="flex items-center">
+                  <i class="fa fa-check-circle text-success mr-1"></i>
+                  几何图形认识
+                </span>
+                <span class="text-success">已完成</span>
+              </li>
+              <li class="flex justify-between text-xs text-neutral-500">
+                <span class="flex items-center">
+                  <i class="fa fa-circle-o text-warning mr-1"></i>
+                  应用题解题技巧
+                </span>
+                <span class="text-warning">进行中</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 英语 -->
+        <div class="bg-white rounded-xl p-4 card-shadow animate-slide-up" style="animation-delay: 0.4s">
+          <div class="flex justify-between items-center mb-2">
+            <div class="flex items-center">
+              <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                <i class="fa fa-language text-primary"></i>
+              </div>
+              <h4 class="font-medium text-neutral-700">英语口语</h4>
+            </div>
+            <span class="text-primary font-medium">60%</span>
+          </div>
+          <div class="w-full bg-neutral-100 rounded-full h-2 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-secondary h-2 rounded-full progress-animate" style="width: 60%"></div>
+          </div>
+          <div class="mt-3">
+            <h5 class="text-sm font-medium text-neutral-600 mb-1">最近学习</h5>
+            <ul class="space-y-2">
+              <li class="flex justify-between text-xs text-neutral-500">
+                <span class="flex items-center">
+                  <i class="fa fa-check-circle text-success mr-1"></i>
+                  日常用语会话
+                </span>
+                <span class="text-success">已完成</span>
+              </li>
+              <li class="flex justify-between text-xs text-neutral-500">
+                <span class="flex items-center">
+                  <i class="fa fa-check-circle text-success mr-1"></i>
+                  情景对话练习
+                </span>
+                <span class="text-success">已完成</span>
+              </li>
+              <li class="flex justify-between text-xs text-neutral-500">
+                <span class="flex items-center">
+                  <i class="fa fa-circle-o text-warning mr-1"></i>
+                  英文故事阅读
+                </span>
+                <span class="text-warning">进行中</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 编程 -->
+        <div class="bg-white rounded-xl p-4 card-shadow animate-slide-up" style="animation-delay: 0.5s">
+          <div class="flex justify-between items-center mb-2">
+            <div class="flex items-center">
+              <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                <i class="fa fa-code text-primary"></i>
+              </div>
+              <h4 class="font-medium text-neutral-700">编程启蒙</h4>
+            </div>
+            <span class="text-primary font-medium">90%</span>
+          </div>
+          <div class="w-full bg-neutral-100 rounded-full h-2 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-secondary h-2 rounded-full progress-animate" style="width: 90%"></div>
+          </div>
+          <div class="mt-3">
+            <h5 class="text-sm font-medium text-neutral-600 mb-1">最近学习</h5>
+            <ul class="space-y-2">
+              <li class="flex justify-between text-xs text-neutral-500">
+                <span class="flex items-center">
+                  <i class="fa fa-check-circle text-success mr-1"></i>
+                  Scratch基础操作
+                </span>
+                <span class="text-success">已完成</span>
+              </li>
+              <li class="flex justify-between text-xs text-neutral-500">
+                <span class="flex items-center">
+                  <i class="fa fa-check-circle text-success mr-1"></i>
+                  动画制作
+                </span>
+                <span class="text-success">已完成</span>
+              </li>
+              <li class="flex justify-between text-xs text-neutral-500">
+                <span class="flex items-center">
+                  <i class="fa fa-circle-o text-warning mr-1"></i>
+                  简单游戏开发
+                </span>
+                <span class="text-warning">进行中</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 购物车页面 -->
+    <div id="cart-page" class="page-content hidden animate-fade-in">
+      <div class="flex justify-between items-center mb-4 mt-2">
+        <h2 class="text-xl font-bold text-neutral-700">我的收藏课程</h2>
+        <button class="text-primary text-sm font-medium hover:underline">
+          管理
+        </button>
+      </div>
+
+      <div id="cart-items" class="space-y-4">
+        <!-- 课程1 -->
+        <div class="bg-white rounded-xl p-4 card-shadow animate-slide-up" style="animation-delay: 0.1s">
+          <div class="flex">
+            <img src="https://picsum.photos/100/100?random=3" alt="科学实验课" class="w-20 h-20 object-cover rounded-lg mr-4">
+            <div class="flex-1">
+              <h3 class="font-medium text-neutral-700">小小科学家实验课</h3>
+              <p class="text-xs text-neutral-400 mt-1">适合6-10岁儿童，培养科学思维</p>
+              <div class="mt-2 flex justify-between items-center">
+                <div>
+                  <span class="text-primary font-bold">¥298.00</span>
+                  <span class="text-xs text-neutral-400 line-through ml-2">¥398.00</span>
+                </div>
+                <button class="text-red-500 text-sm hover:underline flex items-center">
+                  <i class="fa fa-trash-o mr-1"></i>移除
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 课程2 -->
+        <div class="bg-white rounded-xl p-4 card-shadow animate-slide-up" style="animation-delay: 0.2s">
+          <div class="flex">
+            <img src="https://picsum.photos/100/100?random=4" alt="机器人编程" class="w-20 h-20 object-cover rounded-lg mr-4">
+            <div class="flex-1">
+              <h3 class="font-medium text-neutral-700">机器人编程进阶</h3>
+              <p class="text-xs text-neutral-400 mt-1">适合10-14岁儿童，Python基础</p>
+              <div class="mt-2 flex justify-between items-center">
+                <div>
+                  <span class="text-primary font-bold">¥499.00</span>
+                  <span class="text-xs text-neutral-400 line-through ml-2">¥599.00</span>
+                </div>
+                <button class="text-red-500 text-sm hover:underline flex items-center">
+                  <i class="fa fa-trash-o mr-1"></i>移除
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 课程3 -->
+        <div class="bg-white rounded-xl p-4 card-shadow animate-slide-up" style="animation-delay: 0.3s">
+          <div class="flex">
+            <img src="https://picsum.photos/100/100?random=5" alt="书法课" class="w-20 h-20 object-cover rounded-lg mr-4">
+            <div class="flex-1">
+              <h3 class="font-medium text-neutral-700">硬笔书法入门</h3>
+              <p class="text-xs text-neutral-400 mt-1">提升书写能力，培养耐心与专注力</p>
+              <div class="mt-2 flex justify-between items-center">
+                <div>
+                  <span class="text-primary font-bold">¥199.00</span>
+                  <span class="text-xs text-neutral-400 line-through ml-2">¥259.00</span>
+                </div>
+                <button class="text-red-500 text-sm hover:underline flex items-center">
+                  <i class="fa fa-trash-o mr-1"></i>移除
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 结算区域 -->
+      <div class="fixed bottom-20 left-0 right-0 bg-white border-t border-neutral-200 p-4">
+        <div class="container mx-auto">
+          <div class="flex justify-between items-center mb-3">
+            <div>
+              <span class="text-neutral-600">合计：</span>
+              <span class="text-primary font-bold text-lg">¥996.00</span>
+              <span class="text-xs text-neutral-400">（3门课程）</span>
+            </div>
+            <button class="bg-gradient-to-r from-primary to-secondary text-white rounded-lg px-6 py-2 font-medium hover:shadow-lg transition-all">
+              立即购买
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 我的页面 -->
+    <div id="profile-page" class="page-content hidden animate-fade-in">
+      <!-- 用户信息 -->
+      <div class="bg-white rounded-xl p-4 card-shadow mb-6 animate-slide-up" style="animation-delay: 0.1s">
+        <div class="flex items-center">
+          <img src="https://picsum.photos/80/80?random=6" alt="用户头像" class="w-16 h-16 rounded-full object-cover mr-4">
+          <div>
+            <h3 class="font-bold text-neutral-700">李家长</h3>
+            <p class="text-sm text-neutral-500">138****6789</p>
+            <div class="mt-1 flex">
+              <span class="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full mr-2">
+                VIP会员
+              </span>
+              <span class="text-xs bg-neutral-100 text-neutral-500 px-2 py-0.5 rounded-full">
+                会员到期: 2025-12-31
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 功能列表 -->
+      <div class="space-y-2 animate-slide-up" style="animation-delay: 0.2s">
+        <a href="#" class="bg-white rounded-xl p-4 card-shadow flex items-center justify-between hover:bg-neutral-50 transition-colors">
+          <div class="flex items-center">
+            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+              <i class="fa fa-user-o text-primary"></i>
+            </div>
+            <span class="text-neutral-600">账户管理</span>
+          </div>
+          <i class="fa fa-angle-right text-neutral-400"></i>
+        </a>
+
+        <a href="#" class="bg-white rounded-xl p-4 card-shadow flex items-center justify-between hover:bg-neutral-50 transition-colors">
+          <div class="flex items-center">
+            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+              <i class="fa fa-lock text-primary"></i>
+            </div>
+            <span class="text-neutral-600">隐私设置</span>
+          </div>
+          <i class="fa fa-angle-right text-neutral-400"></i>
+        </a>
+
+        <a href="#" class="bg-white rounded-xl p-4 card-shadow flex items-center justify-between hover:bg-neutral-50 transition-colors">
+          <div class="flex items-center">
+            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+              <i class="fa fa-credit-card text-primary"></i>
+            </div>
+            <span class="text-neutral-600">我的订单</span>
+          </div>
+          <i class="fa fa-angle-right text-neutral-400"></i>
+        </a>
+
+        <a href="#" class="bg-white rounded-xl p-4 card-shadow flex items-center justify-between hover:bg-neutral-50 transition-colors">
+          <div class="flex items-center">
+            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+              <i class="fa fa-bell-o text-primary"></i>
+            </div>
+            <span class="text-neutral-600">消息通知</span>
+            <span class="bg-danger text-white text-xs rounded-full w-4 h-4 flex items-center justify-center ml-2">3</span>
+          </div>
+          <i class="fa fa-angle-right text-neutral-400"></i>
+        </a>
+
+        <a href="#" class="bg-white rounded-xl p-4 card-shadow flex items-center justify-between hover:bg-neutral-50 transition-colors">
+          <div class="flex items-center">
+            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+              <i class="fa fa-question-circle-o text-primary"></i>
+            </div>
+            <span class="text-neutral-600">帮助中心</span>
+          </div>
+          <i class="fa fa-angle-right text-neutral-400"></i>
+        </a>
+
+        <a href="#" class="bg-white rounded-xl p-4 card-shadow flex items-center justify-between hover:bg-neutral-50 transition-colors">
+          <div class="flex items-center">
+            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+              <i class="fa fa-phone text-primary"></i>
+            </div>
+            <span class="text-neutral-600">客服中心</span>
+          </div>
+          <i class="fa fa-angle-right text-neutral-400"></i>
+        </a>
+      </div>
+
+      <!-- 退出登录 -->
+      <div class="mt-6 animate-slide-up" style="animation-delay: 0.3s">
+        <button id="logout-btn" class="w-full bg-white text-danger py-3 rounded-xl border border-red-100 font-medium hover:bg-red-50 transition-colors flex items-center justify-center">
+          <i class="fa fa-sign-out mr-2"></i> 退出当前账号
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- 底部导航栏 -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-t border-neutral-200 py-2 nav-shadow">
+    <div class="grid grid-cols-4 gap-1">
+      <a href="#" class="nav-item flex flex-col items-center justify-center py-2 text-neutral-500 hover:text-primary transition-colors active" data-page="home-page">
+        <i class="fa fa-home text-xl mb-1"></i>
+        <span class="text-xs">首页</span>
+      </a>
+      <a href="#" class="nav-item flex flex-col items-center justify-center py-2 text-neutral-500 hover:text-primary transition-colors" data-page="progress-page">
+        <i class="fa fa-line-chart text-xl mb-1"></i>
+        <span class="text-xs">学习进度</span>
+      </a>
+      <a href="#" class="nav-item flex flex-col items-center justify-center py-2 text-neutral-500 hover:text-primary transition-colors" data-page="cart-page">
+        <i class="fa fa-shopping-cart text-xl mb-1"></i>
+        <span class="text-xs">购物车</span>
+        <span class="absolute -top-1 -right-1 bg-danger text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
+      </a>
+      <a href="#" class="nav-item flex flex-col items-center justify-center py-2 text-neutral-500 hover:text-primary transition-colors" data-page="profile-page">
+        <i class="fa fa-user text-xl mb-1"></i>
+        <span class="text-xs">我的</span>
+      </a>
+    </div>
+  </nav>
+
+</body>
+</html>

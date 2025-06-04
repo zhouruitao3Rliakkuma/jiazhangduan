@@ -1,0 +1,36 @@
+
+  @layer utilities {
+    .content-auto {
+      content-visibility: auto;
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #F7F8FA 0%, #E9EFF6 100%);
+    }
+    .card-hover-effect {
+      transition: all 0.3s ease;
+    }
+    .card-hover-effect:hover {
+      transform: translateY(-5px);
+    }
+    .progress-animate {
+      transition: width 1s ease-in-out;
+    }
+    .nav-item-active {
+      color: #165DFF;
+      position: relative;
+    }
+    .nav-item-active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #165DFF;
+    }
+  }
